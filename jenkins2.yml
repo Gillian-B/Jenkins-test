@@ -6,6 +6,7 @@ jenkins:
       enableCaptcha: false
       users:
       - id: "admin"
+        password: "password"
         name: "admin"
         properties:
         - "apiToken"
