@@ -1,5 +1,5 @@
 jenkins:
-  systemMessage: “Hello! Welcome to my Jenkins instance :)”.
+  systemMessage: "Hello! Welcome to my Jenkins instance :)"
   securityRealm:
     local:
       users:
