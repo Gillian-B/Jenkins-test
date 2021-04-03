@@ -20,7 +20,7 @@ jobs:
       	steps {
     	  dsl {
     		lookupStrategy('SEED_JOB')
-    		external('jobdslscript/JenkinsJobDslRemote.groovy')
+    		external('https://raw.githubusercontent.com/Gillian-B/Jenkins-test/master/job_dsl.groovy')
     	  }
     	}
       }    
