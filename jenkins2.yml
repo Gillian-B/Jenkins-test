@@ -16,11 +16,9 @@ jenkins:
             emailAddress: "jigglypuff@"
   jobs:
     - script: >
-        job('Job_DSL_Seed') {
-          steps  {
-            dsl  {
-              lookupStrategy('SEED_JOB')
-              external('jobdslscript/JenkinsJobDslRemote.groovy')
-            }
-          }
+        job('Disk Space Check') {
+        	description 'testettette'
+        	steps {
+        		shell 'df'
+        	}
         }

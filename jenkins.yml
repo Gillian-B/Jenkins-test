@@ -4,3 +4,17 @@ jenkins:
   mode: NORMAL
   scmCheckoutRetryCount: 3
   labelString: "master-label"
+  
+  
+  
+  
+  jobs:
+    - script: >
+        job('Job_DSL_Seed') {
+          steps  {
+            dsl  {
+              lookupStrategy('SEED_JOB')
+              external('jobdslscript/JenkinsJobDslRemote.groovy')
+            }
+          }
+        }
