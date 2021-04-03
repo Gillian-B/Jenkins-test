@@ -18,7 +18,7 @@ jenkins:
     - script: >
         job('Job_DSL_Seed') {
           steps {
-            jobDsl {
+            dsl {
               targets 'https://raw.githubusercontent.com/Gillian-B/Jenkins-test/master/job_dsl.groovy'
             }
           }
