@@ -8,10 +8,3 @@ jenkins:
       - id: "admin"
         password: "password"
         name: "admin"
-        properties:
-        - "apiToken"
-        - "myView"
-        - "timezone"
-        - "mailer"
-        - preferredProvider:
-            providerId: "default"
