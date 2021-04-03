@@ -14,11 +14,11 @@ jenkins:
         properties:
         - mailer:
             emailAddress: "jigglypuff@"
-  jobs:
-    - script: >
-        job('demo') {
-            steps {
-                shell('echo "hello world"')
-            }
-        }
+jobs:
+  - script: >
+      job('demo') {
+          steps {
+              shell('echo "hello world"')
+          }
+      }
     
