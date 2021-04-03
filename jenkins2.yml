@@ -17,9 +17,10 @@ jenkins:
   jobs:
     - script: >
         job('Job_DSL_Seed') {
-          steps {
-            dsl {
-              targets 'https://raw.githubusercontent.com/Gillian-B/Jenkins-test/master/job_dsl.groovy'
-            }
+	        steps {
+    	      dsl {
+    		      lookupStrategy('SEED_JOB')
+    		      external('jobdslscript/JenkinsJobDslRemote.groovy')
+    	      }
           }
         }
