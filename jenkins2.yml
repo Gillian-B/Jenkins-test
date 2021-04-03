@@ -13,7 +13,6 @@ jenkins:
         - "timezone"
       - id: "jigglypuff"
         name: "Jigglypuff"
-        password: "password"
         properties:
         - "myView"
         - "timezone"
