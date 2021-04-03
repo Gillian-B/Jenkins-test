@@ -16,9 +16,11 @@ jenkins:
             emailAddress: "jigglypuff@"
 jobs:
   - script: >
-      job('demo') {
-          steps {
-              shell('echo "hello world"')
-          }
-      }
-    
+      job('Job_DSL_Seed') {
+      	steps {
+    	  dsl {
+    		lookupStrategy('SEED_JOB')
+    		external('jobdslscript/JenkinsJobDslRemote.groovy')
+    	  }
+    	}
+      }    
