@@ -14,13 +14,3 @@ jenkins:
         - "mailer"
         - preferredProvider:
             providerId: "default"
-      - id: "jigglypuff"
-        name: "Jigglypuff"
-        properties:
-        - "apiToken"
-        - "myView"
-        - preferredProvider:
-            providerId: "default"
-        - "timezone"
-        - mailer:
-            emailAddress: "jigglypuff@"
