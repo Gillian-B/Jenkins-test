@@ -14,3 +14,5 @@ jenkins:
         properties:
         - mailer:
             emailAddress: "jigglypuff@"
+  Jobs:
+    - url: https://raw.githubusercontent.com/Gillian-B/Jenkins-test/master/job_dsl.groovy
