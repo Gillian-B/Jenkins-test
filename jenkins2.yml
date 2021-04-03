@@ -15,7 +15,6 @@ jenkins:
         - preferredProvider:
             providerId: "default"
       - id: "jigglypuff"
-        password: "password"
         name: "Jigglypuff"
         properties:
         - "apiToken"
