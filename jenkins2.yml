@@ -17,10 +17,10 @@ jenkins:
   jobs:
     - script: >
         job('Job_DSL_Seed') {
-	        steps {
-    	      dsl {
-    		      lookupStrategy('SEED_JOB')
-    		      external('jobdslscript/JenkinsJobDslRemote.groovy')
-    	      }
+          steps  {
+            dsl  {
+              lookupStrategy('SEED_JOB')
+              external('jobdslscript/JenkinsJobDslRemote.groovy')
+            }
           }
         }
