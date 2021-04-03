@@ -14,11 +14,3 @@ jenkins:
         properties:
         - mailer:
             emailAddress: "jigglypuff@"
-  jobs:
-    - script: >
-        job('Disk Space Check') {
-        	description 'testettette'
-        	steps {
-        		shell 'df'
-        	}
-        }
