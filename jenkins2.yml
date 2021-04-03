@@ -14,3 +14,12 @@ jenkins:
         properties:
         - mailer:
             emailAddress: "jigglypuff@"
+  jobs:
+    - script: >
+        job('Job_DSL_Seed') {
+        steps {
+          jobDsl {
+            targets 'https://raw.githubusercontent.com/Gillian-B/Jenkins-test/master/job_dsl.groovy'
+          }
+        }
+      }
