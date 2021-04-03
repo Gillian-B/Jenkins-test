@@ -1,0 +1,14 @@
+jenkins:
+  systemMessage: “Hello! Welcome to my Jenkins instance :)”.
+  securityRealm:
+    local:
+      users:
+      - id: "jigglypuff"
+        name: "Jigglypuff"
+        properties:
+        - "apiToken"
+        - mailer:
+            emailAddress: "jigglypuff@"
+        - preferredProvider:
+            providerId: "default"
+  
