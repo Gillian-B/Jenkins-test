@@ -18,9 +18,9 @@ jobs:
   - script: >
       job('Job_DSL_Seed') {
       	steps {
-    	  dsl {
-    		lookupStrategy('SEED_JOB')
-    		external('https://raw.githubusercontent.com/Gillian-B/Jenkins-test/master/job_dsl.groovy')
-    	  }
-    	}
+      	  dsl {
+      	  	lookupStrategy('SEED_JOB')
+      	  	external('https://raw.githubusercontent.com/Gillian-B/Jenkins-test/master/job_dsl.groovy')
+      	  }
+      	}
       }    
