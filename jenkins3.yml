@@ -1,26 +1,24 @@
 jenkins:
-  systemMessage: "Hello! Welcome to my Jenkins instance :)"
+  systemMessage: "Welcome to the Chocolatine-Powered Marvin Jenkins Instance."
   securityRealm:
     local:
       allowsSignup: false
       enableCaptcha: false
       users:
       - id: "admin"
-        password: "fa790851bee946d6abc7f535dd2c531e"
         name: "admin"
-      - id: "jigglypuff"
-        password: "password"
-        name: "Jigglypuff"
-        properties:
-        - mailer:
-            emailAddress: "jigglypuff@"
+      - id: "chocolateen"
+        password: ${USER_CHOCOLATEEN_PASSWORD}
+        name: "Hugo"
+      - id: "vaugie_g"
+        password: ${USER_VAUGIE_G_PASSWORD}
+        name: "Garance"
+      - id: "i_dont_know"
+        password: ${USER_I_DONT_KNOW_PASSWORD}
+        name: "Jeremy"
+      - id: "nasso"
+        password: ${USER_NASSO_PASSWORD}
+        name: "Nassim"
+        
 jobs:
-  - script: >
-      job('Job_DSL_Seed') {
-      	steps {
-      	  dsl {
-      	  	lookupStrategy('SEED_JOB')
-      	  	external('https://raw.githubusercontent.com/Gillian-B/Jenkins-test/master/job_dsl.groovy')
-      	  }
-      	}
-      }    
+  - url: "https://raw.githubusercontent.com/Gillian-B/Jenkins-test/master/job_dsl2.groovy"

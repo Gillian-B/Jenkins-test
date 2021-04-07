@@ -6,7 +6,6 @@ jenkins:
       enableCaptcha: false
       users:
       - id: "admin"
-        password: "fa790851bee946d6abc7f535dd2c531e"
         name: "admin"
       - id: "jigglypuff"
         password: "password"
