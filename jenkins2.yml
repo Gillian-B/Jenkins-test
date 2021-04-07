@@ -8,7 +8,7 @@ jenkins:
       - id: "admin"
         name: "admin"
       - id: "jigglypuff"
-        password: "password"
+        password: ${USER_CHOCOLATEEN_PASSWORD}
         name: "Jigglypuff"
         properties:
         - mailer:

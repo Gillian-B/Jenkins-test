@@ -1,5 +1,75 @@
 jenkins:
   systemMessage: "Welcome to the Chocolatine-Powered Marvin Jenkins Instance."
+  authorizationStrategy:
+    roleBased:
+      roles:
+        global:
+        - assignements: 
+          - "chocolateen"
+          name: "admin"
+          pattern: ".*"
+          permissions:
+            - "Job/Move"
+            - "Job/Build"
+            - "Credentials/Delete"
+            - "Credentials/ManageDomains"
+            - "View/Create"
+            - "Agent/Configure"
+            - "Job/Read"
+            - "Credentials/Update"
+            - "Agent/Create"
+            - "Job/Delete"
+            - "Agent/Build"
+            - "View/Configure"
+            - "Agent/Provision"
+            - "SCM/Tag"
+            - "Job/Create"
+            - "Job/Discover"
+            - "Credentials/View"
+            - "Agent/Connect"
+            - "Agent/Delete"
+            - "Agent/Disconnect"
+            - "Run/Delete"
+            - "Job/Cancel"
+            - "Overall/Read"
+            - "Run/Update"
+            - "Credentials/Create"
+            - "Overall/Administer"
+            - "View/Delete"
+            - "Job/Configure"
+            - "Job/Workspace"
+            - "View/Read"
+        - assignements:
+          - "i_dont_know"
+          name: "ape"
+          pattern: ".*"
+          permissions:
+            - "Overall/Read"
+            - "Job/Build"
+            - "Job/Workspace"
+        - assignements:
+          - "vaugie_g"
+          name: "gorilla"
+          pattern: ".*"
+          permissions:
+            - "Overall/Read"
+            - "Job/Move"
+            - "Job/Build"
+            - "Job/Delete"
+            - "Job/Create"
+            - "Job/Configure"
+            - "Job/Workspace"
+            - "Run/Delete"
+        - assignements:
+          - "nasso"
+          name: "assist"
+          pattern: ".*"
+          permissions:
+            - "Overall/Read"
+            - "Job/Read"
+            - "Job/Workspace"              
+  remotingSecurity:
+    enabled: true
   securityRealm:
     local:
       allowsSignup: false
