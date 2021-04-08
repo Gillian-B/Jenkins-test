@@ -45,6 +45,7 @@ jenkins:
           pattern: ".*"
           permissions:
             - "Overall/Read"
+            - "Job/Read"
             - "Job/Build"
             - "Job/Workspace"
         - assignments:
@@ -53,6 +54,7 @@ jenkins:
           pattern: ".*"
           permissions:
             - "Overall/Read"
+            - "Job/Read"
             - "Job/Move"
             - "Job/Build"
             - "Job/Delete"
