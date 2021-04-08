@@ -4,7 +4,7 @@ jenkins:
     roleBased:
       roles:
         global:
-        - assignements: 
+        - assignments: 
           - "chocolateen"
           name: "admin"
           pattern: ".*"
@@ -39,7 +39,7 @@ jenkins:
             - "Job/Configure"
             - "Job/Workspace"
             - "View/Read"
-        - assignements:
+        - assignments:
           - "i_dont_know"
           name: "ape"
           pattern: ".*"
@@ -47,7 +47,7 @@ jenkins:
             - "Overall/Read"
             - "Job/Build"
             - "Job/Workspace"
-        - assignements:
+        - assignments:
           - "vaugie_g"
           name: "gorilla"
           pattern: ".*"
@@ -60,7 +60,7 @@ jenkins:
             - "Job/Configure"
             - "Job/Workspace"
             - "Run/Delete"
-        - assignements:
+        - assignments:
           - "nasso"
           name: "assist"
           pattern: ".*"
