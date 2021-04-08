@@ -14,4 +14,4 @@ jenkins:
         - mailer:
             emailAddress: "jigglypuff@"
 jobs:
-  - url: "https://raw.githubusercontent.com/Gillian-B/Jenkins-test/master/job_dsl.groovy"
+  - url: "https://raw.githubusercontent.com/Gillian-B/Jenkins-test/master/job_dsl2.groovy"
