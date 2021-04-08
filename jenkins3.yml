@@ -75,8 +75,6 @@ jenkins:
       allowsSignup: false
       enableCaptcha: false
       users:
-      - id: "admin"
-        name: "admin"
       - id: "chocolateen"
         password: ${USER_CHOCOLATEEN_PASSWORD}
         name: "Hugo"
