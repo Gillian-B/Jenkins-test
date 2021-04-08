@@ -59,7 +59,7 @@ jenkins:
             - "Job/Create"
             - "Job/Configure"
             - "Job/Workspace"
-            - "Run/Delete"
+            - "Job/Cancel"
         - assignments:
           - "nasso"
           name: "assist"
