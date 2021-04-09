@@ -27,7 +27,7 @@ job('Tools/SEED') {
     }
     steps {
         dsl {
-            text("job(\"\${DISPLAY_NAME}\") {\n    description(\"\${GITHUB_NAME})\n\"}")
+            text("job(\"\${DISPLAY_NAME}\") {\n    description(\"\${GITHUB_NAME}\")\n}")
         }
     }
 }
