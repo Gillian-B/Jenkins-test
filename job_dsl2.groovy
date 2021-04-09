@@ -31,3 +31,17 @@ job('Tools/SEED') {
         }
     }
 }
+
+job('Tools/SEED2') {
+    parameters {
+    	stringParam('GITHUB_NAME', null, 'GitHub repository owner/repo_name')
+        stringParam('DISPLAY_NAME', null, '“Display name for the job')
+    }
+    steps {
+        dsl {
+            text('''job(\"\${DISPLAY_NAME}\") {
+                description(\"\${GITHUB_NAME}\")
+            }''')
+        }
+    }
+}
