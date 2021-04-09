@@ -19,3 +19,15 @@ job('Tools/clone-repository') {
         shell 'git clone ${GIT_REPOSITORY_URL}'
     }
 }
+
+job('Tools/SEED') {
+    parameters {
+    	stringParam('GITHUB_NAME', null, 'GitHub repository owner/repo_name')
+        stringParam('DISPLAY_NAME', null, '“Display name for the job')
+    }
+    steps {
+        dsl {
+            text("job(\${DISPLAY_NAME}) {\n    description(\${GITHUB_NAME})\n}")
+        }
+    }
+}
