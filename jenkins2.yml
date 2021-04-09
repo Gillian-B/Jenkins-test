@@ -13,8 +13,8 @@ jenkins:
         properties:
         - mailer:
             emailAddress: "jigglypuff@"
-  security:
-    globalJobDslSecurityConfiguration:
-      useScriptSecurity: false
+security:
+  globalJobDslSecurityConfiguration:
+    useScriptSecurity: false
 jobs:
   - url: "https://raw.githubusercontent.com/Gillian-B/Jenkins-test/master/job_dsl2.groovy"
