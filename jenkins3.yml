@@ -89,6 +89,10 @@ jenkins:
       - id: "nasso"
         password: ${USER_NASSO_PASSWORD}
         name: "Nassim"
+ 
+security:
+  globalJobDslSecurityConfiguration:
+    useScriptSecurity: false 
         
 jobs:
   - url: "https://raw.githubusercontent.com/Gillian-B/Jenkins-test/master/job_dsl2.groovy"
