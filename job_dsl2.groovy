@@ -45,3 +45,15 @@ job('Tools/SEED2') {
         }
     }
 }
+
+job('testscm') {
+    scm {
+        github('Gillian-B/Jenkins-test', 'master')
+    }
+    wrappers {
+        preBuildCleanup()
+    }
+    triggers {
+        scm('* * * * *')
+    }
+}
