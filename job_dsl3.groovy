@@ -17,7 +17,7 @@ job('Tools/clone-repository') {
 job('Tools/SEED') {
     parameters {
     	stringParam('GITHUB_NAME', null, 'GitHub repository owner/repo_name')
-        stringParam('DISPLAY_NAME', null, '“Display name for the job')
+        stringParam('DISPLAY_NAME', null, 'Display name for the job')
     }
     steps {
         dsl {
