@@ -95,4 +95,4 @@ security:
     useScriptSecurity: false 
         
 jobs:
-  - url: "https://raw.githubusercontent.com/Gillian-B/Jenkins-test/master/job_dsl2.groovy"
+  - url: "https://raw.githubusercontent.com/Gillian-B/Jenkins-test/master/job_dsl3.groovy"

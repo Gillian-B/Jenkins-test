@@ -56,4 +56,10 @@ job('testscm') {
     triggers {
         scm('* * * * *')
     }
+    steps {
+        shell 'make fclean'
+        shell 'make'
+        shell 'make tests_run'
+        shell 'make clean'
+    }
 }
